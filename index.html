@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+</head>
+<body>
+    <div class="container">
+     <div class="jumbotron"; style="background-color:rgb(0, 108, 209); color: white";>
+        <h1 class="text-center"><strong>Crystal Collector game</strong></h1>
+     </div>
+     <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title text-center">
+                        Instructions 
+                    </h3>
+                    <div class="card-body">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random.</p>
+                        <p>The value of each crystal is hidden from you until you click on it.</p>
+                        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-3">
+                <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title text-center">
+                                Target Score 
+                            </h3>
+                            <div class="card-body text-center">
+                                <h3 id="targetScore"></h3>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-3">
+                <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title text-center">
+                                Your Score 
+                            </h3>
+                            <div class="card-body text-center">
+                                <h3 id="yourScore"></h3>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title text-center">
+                                Crystal Selection
+                            </h3>
+                            <div class="card-body text-center">
+                            <img class="crystalsImg" src="images/Crystal1.png" alt="" id="blue">
+                            <img class="crystalsImg" src="images/Crystal2.png" alt="" id="green"> 
+                            <img class="crystalsImg" src="images/Crystal3.png" alt="" id="red">
+                            <img class="crystalsImg" src="images/Crystal4.png" alt="" id="yellow">
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<br>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title text-center">
+                                Win Count
+                            </h3>
+                            <div class="card-body text-center">
+                                <h3 id="winCount">0</h3>
+                            </div>
+                    </div>
+                </div>
+        </div> 
+        <div class="col-lg-6">
+                <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title text-center">
+                                Loss Count 
+                            </h3>
+                            <div class="card-body text-center">
+                                <h3 id="lossCount">0</h3>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="javascript.js"></script>
+</body>
+</html>
